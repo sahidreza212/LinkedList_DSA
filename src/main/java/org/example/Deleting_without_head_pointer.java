@@ -9,8 +9,11 @@ class Node{
         next = null;
     }
 }
-
 public class Deleting_without_head_pointer {
+
+    public static void deleteNode(Node x){
+
+    }
     public static void main(String[] args) {
 
 
