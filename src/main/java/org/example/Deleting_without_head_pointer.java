@@ -33,6 +33,14 @@ public class Deleting_without_head_pointer {
     }
     public static void main(String[] args) {
 
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(4);
+        head.next.next.next = new Node(30);
 
+        Node x = head.next;
+
+        deleteNode(x);
+        printList(head);
     }
 }
