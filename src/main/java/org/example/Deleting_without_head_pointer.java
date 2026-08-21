@@ -17,6 +17,11 @@ public class Deleting_without_head_pointer {
       x.next = temp.next;
 
     }
+
+    public static void printList(Node head){
+
+
+    }
     public static void main(String[] args) {
 
 
