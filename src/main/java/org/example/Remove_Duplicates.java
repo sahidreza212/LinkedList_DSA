@@ -31,6 +31,12 @@ public class Remove_Duplicates {
         }
         return  head;
     }
+
+    public static void printList(Node head) {
+
+
+    }
+
     public static void main(String[] args) {
 
     }
