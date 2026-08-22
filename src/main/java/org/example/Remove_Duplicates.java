@@ -49,8 +49,10 @@ public class Remove_Duplicates {
 
         Node head = new Node(5);
         head.next = new Node(2);
-        head.next.next = new Node(2);
+        head.next.next = new Node(4);
         head.next.next.next = new Node(2);
+        head.next.next.next.next = new Node(4);
+        head.next.next.next.next.next = new Node(7);
 
         head = deleteDuplicates(head);
         printList(head);
