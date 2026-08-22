@@ -28,6 +28,15 @@ public class Sort_LinkedList {
         }
     }
 
+    static void printList(Node node) {
+        while (node != null) {
+            System.out.print(" " + node.data);
+            node = node.next;
+        }
+        System.out.println();
+    }
+
+
     public static void main(String[] args) {
 
     }
