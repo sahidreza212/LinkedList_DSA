@@ -47,6 +47,13 @@ public class Remove_Duplicates {
 
     public static void main(String[] args) {
 
+        Node head = new Node(5);
+        head.next = new Node(2);
+        head.next.next = new Node(2);
+        head.next.next.next = new Node(2);
+
+        head = deleteDuplicates(head);
+        printList(head);
     }
 
 }
