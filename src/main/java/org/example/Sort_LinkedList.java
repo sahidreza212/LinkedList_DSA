@@ -39,5 +39,18 @@ public class Sort_LinkedList {
 
     public static void main(String[] args) {
 
+        Node head = new Node(1);
+        head.next = new Node(1);
+        head.next.next = new Node(2);
+        head.next.next.next = new Node(1);
+        head.next.next.next.next = new Node(0);
+
+        System.out.print("Linked List before Sorting:");
+        printList(head);
+
+        sortList(head);
+
+        System.out.print("Linked List after Sorting:");
+        printList(head);
     }
 }
