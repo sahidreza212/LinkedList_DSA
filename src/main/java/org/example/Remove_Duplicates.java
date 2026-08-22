@@ -34,6 +34,14 @@ public class Remove_Duplicates {
 
     public static void printList(Node head) {
 
+        while(head != null){
+            System.out.print(head.data);
+            if(head.next != null){
+                System.out.print(" -> ");
+            }
+            head = head.next;
+        }
+        System.out.println();
 
     }
 
