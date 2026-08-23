@@ -12,6 +12,15 @@ public class Multiply_Two_Linked_List {
            num1 = num1 * 10 + first.data;
            first = first.next;
        }
+       // Travers the second linkedList and construct the second number
+       while(second != null){
+           num2 = num2 * 10 + second.data;
+           second = second.next;
+       }
+
+
+
+
    }
 
     public static void main(String[] args) {
