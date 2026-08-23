@@ -1,7 +1,7 @@
 package org.example;
 
 public class Multiply_Two_Linked_List {
-   public static final long MOD = 10000000007;
+   public static final long MOD = 1000000007;
 
    public static long multiplyTwoList(Node first,  Node second){
 
@@ -24,12 +24,10 @@ public class Multiply_Two_Linked_List {
 
     public static void main(String[] args) {
 
-       Node first = new Node(9);
-       first.next = new Node(4);
-       first.next.next = new Node(6);
+       Node first = new Node(3);
+       first.next = new Node(2);
 
-       Node second = new Node(8);
-       second.next = new Node(4);
+       Node second = new Node(2);
 
         System.out.print(multiplyTwoList(first,second));
     }
