@@ -17,9 +17,8 @@ public class Multiply_Two_Linked_List {
            num2 = num2 * 10 + second.data;
            second = second.next;
        }
-
-
-
+       // return the product modulo MOD
+       return (num1 * num2) % MOD;
 
    }
 
