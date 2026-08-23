@@ -24,5 +24,13 @@ public class Multiply_Two_Linked_List {
 
     public static void main(String[] args) {
 
+       Node first = new Node(9);
+       first.next = new Node(4);
+       first.next.next = new Node(6);
+
+       Node second = new Node(8);
+       second.next = new Node(4);
+
+        System.out.print(multiplyTwoList(first,second));
     }
 }
