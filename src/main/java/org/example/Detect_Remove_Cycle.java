@@ -42,5 +42,8 @@ public class Detect_Remove_Cycle {
         head.next = new Node(3);
         head.next.next = new Node(4);
 
+        // Create a loop
+        head.next.next.next = head.next;
+
     }
 }
