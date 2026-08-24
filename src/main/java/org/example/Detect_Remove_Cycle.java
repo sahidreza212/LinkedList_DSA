@@ -25,6 +25,15 @@ public class Detect_Remove_Cycle {
             }
         }
     }
+
+    static void printList(Node curr) {
+        while (curr != null) {
+            System.out.print(curr.data + " ");
+            curr = curr.next;
+        }
+        System.out.println();
+    }
+
     public static void main(String[] args) {
 
     }
