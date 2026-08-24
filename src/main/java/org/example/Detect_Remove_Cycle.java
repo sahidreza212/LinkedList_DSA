@@ -13,7 +13,15 @@ public class Detect_Remove_Cycle {
 
             // if node is not present in the map then insert
             if(!set.contains(head)){
+                set.add(head);
+                prev = head;
+                head = head.next;
+            }else {
+                // the head is already present then it crate the loop then
+                // last nodes next pointer null
 
+                prev.next = null;
+                break;
             }
         }
     }
