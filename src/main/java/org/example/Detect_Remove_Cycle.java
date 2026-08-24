@@ -45,5 +45,7 @@ public class Detect_Remove_Cycle {
         // Create a loop
         head.next.next.next = head.next;
 
+        removeLoop(head);
+        printList(head);
     }
 }
