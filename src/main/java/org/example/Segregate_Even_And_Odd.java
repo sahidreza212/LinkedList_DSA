@@ -32,15 +32,18 @@ public class Segregate_Even_And_Odd {
 
                 curr = curr.next;
             }else{
+                // if the current is odd then move to the next node
               prev = curr;
               curr = curr.next;
             }
        }
 
+        // if there is no any even then return the original list
         if(resStart == null){
             return  head;
         }
 
+        // append the rest odd node to the result node
         resEnd.next = head;
         return resStart;
 
