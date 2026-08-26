@@ -16,6 +16,13 @@ public class Delete_Node_With_Greater_Value_In_Right_Side {
         head.next = nextNode;
         return head;
     }
+
+    static void printList(Node curr) {
+        while (curr != null) {
+            System.out.print(" " + curr.data);
+            curr = curr.next;
+        }
+    }
     public static void main(String[] args) {
 
     }
