@@ -48,5 +48,13 @@ public class Segregate_Even_And_Odd {
 
     public static void main(String[] args) {
 
+        // Creating linked list: 17->15->8->9->2->4->6
+        Node head = new Node(17);
+        head.next = new Node(15);
+        head.next.next = new Node(8);
+        head.next.next.next = new Node(9);
+        head.next.next.next.next = new Node(2);
+        head.next.next.next.next.next = new Node(4);
+        head.next.next.next.next.next.next = new Node(6);
     }
 }
