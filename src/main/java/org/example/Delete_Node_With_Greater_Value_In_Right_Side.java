@@ -25,5 +25,19 @@ public class Delete_Node_With_Greater_Value_In_Right_Side {
     }
     public static void main(String[] args) {
 
+        // Create linked list
+        // 12->15->10->11->5->6->2->3
+        Node head = new Node(12);
+        head.next = new Node(15);
+        head.next.next = new Node(10);
+        head.next.next.next = new Node(11);
+        head.next.next.next.next = new Node(5);
+        head.next.next.next.next.next = new Node(6);
+        head.next.next.next.next.next.next = new Node(2);
+        head.next.next.next.next.next.next.next = new Node(3);
+
+        head = computeNode(head);
+
+        printList(head);
     }
 }
