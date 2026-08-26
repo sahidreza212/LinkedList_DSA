@@ -56,5 +56,15 @@ public class Segregate_Even_And_Odd {
         head.next.next.next.next = new Node(2);
         head.next.next.next.next.next = new Node(4);
         head.next.next.next.next.next.next = new Node(6);
+
+        head = divideNode(head);
+
+        Node curr = head;
+        while (curr!= null) {
+            System.out.print(curr.data);
+            if (curr.next!= null)
+                System.out.print("->");
+            curr = curr.next;
+        }
     }
 }
