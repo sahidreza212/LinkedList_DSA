@@ -13,6 +13,8 @@ public class Delete_Node_With_Greater_Value_In_Right_Side {
         if(nextNode.data > head.data){
             return nextNode;
         }
+        head.next = nextNode;
+        return head;
     }
     public static void main(String[] args) {
 
