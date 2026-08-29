@@ -20,6 +20,20 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         if(head == null || head.arbit == null){
             return null;
         }
+
+        Node1 slow = head;
+        Node1 fast = head.arbit;
+
+        // move slow and fast pointer to find the middle
+        while(fast != null || fast.arbit != null){
+            slow = slow.arbit;
+            fast = fast.arbit.arbit;
+        }
+
+        // split the list into two
+        Node1 second = slow.arbit;
+        slow.arbit = null;
+        return second;
     }
 
     public static Node1 MergeSort(Node1 head) {
