@@ -21,7 +21,16 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         if(head == null || head.arbit == null){
             return null;
         }
+        // Split the list into two list
+        Node1 left = head;
+        Node1  right = split(head);
 
+        // Recursively sort the both halves
+        left = MergeSort(left);
+        right = MergeSort(right);
+
+        // Merge the two list
+        return SortedMerge(left,right);
     }
     public static Node1 populateArbit(Node1 head){
         Node1 curr = head;
