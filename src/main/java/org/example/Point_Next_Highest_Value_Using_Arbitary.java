@@ -48,6 +48,9 @@ public class Point_Next_Highest_Value_Using_Arbitary {
             }
             curr = curr.arbit;
         }
+        // Attaches th remaining nodes
+        curr.arbit = (left != null) ? left : right;
+        return result;
     }
 
     public static Node1 split(Node1 head){
