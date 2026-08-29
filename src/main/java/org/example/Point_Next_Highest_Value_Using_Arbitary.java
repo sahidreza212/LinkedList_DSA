@@ -24,8 +24,20 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         if(right == null){
             return left;
         }
+         Node1 result = null;
+         Node1 curr = null;
 
+        // Initialize the result with the smaller mode
+         if(left.data <= right.data){
+             result = left;
+             left = left.arbit;
+         }else {
+             result = right;
+             right = right.arbit;
+         }
+         curr = result;
 
+         // merge the two list
     }
 
     public static Node1 split(Node1 head){
