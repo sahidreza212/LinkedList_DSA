@@ -38,6 +38,16 @@ public class Point_Next_Highest_Value_Using_Arbitary {
          curr = result;
 
          // merge the two list
+        while(left != null && right != null){
+            if(left.data <= right.data){
+                curr.arbit = left;
+                left = left.arbit;
+            }else {
+                curr.arbit = right;
+                right = right.arbit;
+            }
+            curr = curr.arbit;
+        }
     }
 
     public static Node1 split(Node1 head){
