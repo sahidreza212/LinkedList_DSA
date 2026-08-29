@@ -103,7 +103,16 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         return MergeSort(head);
     }
 
+    // function for print arbit
+    public static void printListArbit(Node1 node) {
+        Node1 curr = node;
 
+        while (curr != null) {
+            System.out.print(curr.data + " ");
+            curr = curr.arbit;
+        }
+        System.out.println();
+    }
 
     public static void main(String[] args) {
 
