@@ -15,8 +15,14 @@ class Node1{
 }
 public class Point_Next_Highest_Value_Using_Arbitary {
 
+    public static Node1 split(Node1 head){
+        // check if the list is empty or not
+        if(head == null || head.arbit == null){
+            return null;
+        }
+    }
 
-    private static Node1 MergeSort(Node1 head) {
+    public static Node1 MergeSort(Node1 head) {
         // check if the list is empty or having only one node
         if(head == null || head.arbit == null){
             return null;
@@ -32,6 +38,8 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         // Merge the two list
         return SortedMerge(left,right);
     }
+
+
     public static Node1 populateArbit(Node1 head){
         Node1 curr = head;
         // Initialize the arbit to the next node
