@@ -63,7 +63,7 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         Node1 fast = head.arbit;
 
         // move slow and fast pointer to find the middle
-        while(fast != null || fast.arbit != null){
+        while(fast != null && fast.arbit != null){
             slow = slow.arbit;
             fast = fast.arbit.arbit;
         }
@@ -77,7 +77,7 @@ public class Point_Next_Highest_Value_Using_Arbitary {
     public static Node1 MergeSort(Node1 head) {
         // check if the list is empty or having only one node
         if(head == null || head.arbit == null){
-            return null;
+            return head;
         }
         // Split the list into two list
         Node1 left = head;
@@ -120,8 +120,12 @@ public class Point_Next_Highest_Value_Using_Arbitary {
         // List: 5 -> 10 -> 2 -> 3
         Node1 head = new Node1(5);
         head.next = new  Node1(10);
-        head.next.next = new Node1(5);
+        head.next.next = new Node1(2);
         head.next.next.next = new Node1(3);
+
+        // function call
+        head = populateArbit(head);
+        printListArbit(head);
 
     }
 }
