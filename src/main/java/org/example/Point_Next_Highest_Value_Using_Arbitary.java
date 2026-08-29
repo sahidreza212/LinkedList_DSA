@@ -15,6 +15,19 @@ class Node1{
 }
 public class Point_Next_Highest_Value_Using_Arbitary {
 
+    // Function to merge two sorted list
+    public static Node1 SortedMerge(Node1 left , Node1 right){
+        // if one list is empty then return another list
+        if(left == null){
+            return right;
+        }
+        if(right == null){
+            return left;
+        }
+
+
+    }
+
     public static Node1 split(Node1 head){
         // check if the list is empty or not
         if(head == null || head.arbit == null){
