@@ -16,6 +16,13 @@ class Node1{
 public class Point_Next_Highest_Value_Using_Arbitary {
 
 
+    private static Node1 MergeSort(Node1 head) {
+        // check if the list is empty or having only one node
+        if(head == null || head.arbit == null){
+            return null;
+        }
+
+    }
     public static Node1 populateArbit(Node1 head){
         Node1 curr = head;
         // Initialize the arbit to the next node
@@ -23,8 +30,12 @@ public class Point_Next_Highest_Value_Using_Arbitary {
             curr.arbit = curr.next;
             curr = curr.next;
         }
+        // Sort the list using arbit point
         return MergeSort(head);
     }
+
+
+
     public static void main(String[] args) {
 
         // Create a hardcoded linked list
