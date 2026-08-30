@@ -73,5 +73,8 @@ public class Rearrange_LL_Alternate_First_And_Last {
         head.next.next = new Node(3);
         head.next.next.next = new Node(4);
         head.next.next.next.next = new Node(5);
+
+        head = rearrange(head);
+        printList(head);
     }
 }
