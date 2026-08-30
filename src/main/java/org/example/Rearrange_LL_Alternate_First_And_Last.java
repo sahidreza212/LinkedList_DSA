@@ -37,8 +37,23 @@ public class Rearrange_LL_Alternate_First_And_Last {
         // reverse the secondHalf
         secondHalf = reverseList(secondHalf);
 
+        // Merging the tow list firstHalf ans secondHalf
+        Node dummy = new Node(0);
+        Node curr = dummy;
+        while( firstHalf != null || secondHalf != null){
 
-
+            if(firstHalf != null){
+                curr.next = firstHalf;
+                curr = curr.next;
+                firstHalf = firstHalf.next;
+            }
+            if(secondHalf != null){
+                curr.next = secondHalf;
+                curr = curr.next;
+                secondHalf = secondHalf.next;
+            }
+        }
+        return dummy.next;
     }
     public static void main(String[] args) {
 
