@@ -12,4 +12,7 @@ class Node2 {
     }
 }
 public class Sort_Biotonic_DLL {
+    public static void main(String[] args) {
+
+    }
 }
