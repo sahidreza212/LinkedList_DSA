@@ -44,8 +44,34 @@ public class Sort_Biotonic_DLL {
                 last = last.prev;
             }
 
-
+            // add the node to the result
+            if(result == null){
+                result = newNode;
+                tail = result;
+            }else {
+                tail.next = newNode;
+                newNode.prev = tail;
+                tail = tail.next;
+            }
         }
+
+        // Handle the case where front and last pointers
+        // meet or cross
+        while(front != null && front != last.next){
+            Node2 newNode = new Node2(front.data);
+            front = front.next;
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = tail.next;
+        }
+        while(last != null && last.next != front){
+            Node2 newNode = new Node2(last.data);
+            last = last.prev;
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = tail.next;
+        }
+        return result;
     }
     public static void main(String[] args) {
 
