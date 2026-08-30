@@ -13,6 +13,9 @@ public class Rearrange_LL_Alternate_First_And_Last {
             curr = next;
         }
         return prev;
+    }
+    // Method for merging the list
+    public static Node mergeList(Node node){
 
     }
     public static void main(String[] args) {
