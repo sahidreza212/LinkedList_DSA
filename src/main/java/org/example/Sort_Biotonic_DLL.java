@@ -75,5 +75,13 @@ public class Sort_Biotonic_DLL {
     }
     public static void main(String[] args) {
 
+        // Create the doubly linked list: 2<->12<->11<->1
+        Node2 head = new Node2(2);
+        head.next = new Node2(12);
+        head.next.prev = head;
+        head.next.next = new Node2(11);
+        head.next.next.prev = head.next;
+        head.next.next.next = new Node2(1);
+        head.next.next.next.prev = head.next.next;
     }
 }
