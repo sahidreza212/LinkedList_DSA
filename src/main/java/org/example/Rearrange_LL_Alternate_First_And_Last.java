@@ -34,6 +34,10 @@ public class Rearrange_LL_Alternate_First_And_Last {
         Node secondHalf = slow.next;
         slow.next = null;
 
+        // reverse the secondHalf
+        secondHalf = reverseList(secondHalf);
+
+
 
     }
     public static void main(String[] args) {
