@@ -73,7 +73,7 @@ public class Sort_Biotonic_DLL {
         }
         return result;
     }
-    static void printList(Node head) {
+    static void printList(Node2 head) {
         while (head != null) {
             System.out.print(head.data + " ");
             head = head.next;
@@ -92,6 +92,7 @@ public class Sort_Biotonic_DLL {
         head.next.next.next.prev = head.next.next;
 
         Node2 sortedHead = sortBiotonicDLL(head);
+        printList(sortedHead);
 
     }
 }
