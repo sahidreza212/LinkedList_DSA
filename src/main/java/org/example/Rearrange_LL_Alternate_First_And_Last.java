@@ -14,8 +14,8 @@ public class Rearrange_LL_Alternate_First_And_Last {
         }
         return prev;
     }
-    // Method for merging the list
-    public static Node mergeList(Node node){
+    // Method for rearranging and merging the list
+    public static Node rearrange(Node node){
 
         // check if the list is empty or has only one node
         if(node == null || node.next == null){
@@ -54,6 +54,16 @@ public class Rearrange_LL_Alternate_First_And_Last {
             }
         }
         return dummy.next;
+    }
+
+    static void printList(Node node) {
+        if (node == null) {
+            return;
+        }
+        while (node != null) {
+            System.out.print(node.data + " ");
+            node = node.next;
+        }
     }
     public static void main(String[] args) {
 
