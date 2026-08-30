@@ -30,6 +30,22 @@ public class Sort_Biotonic_DLL {
         Node2 front = head;
         Node2 result = null;
         Node2 tail = null;
+
+        // process the node until all are added to the result node
+        while(front != null && last != null && front != last && last.next != front){
+            Node2 newNode;
+
+            // Compare the value of the front and last node
+            if(front.data < last.data){
+                newNode = new Node2(front.data);
+                front = front.next;
+            }else {
+                newNode = new Node2(last.data);
+                last = last.prev;
+            }
+
+
+        }
     }
     public static void main(String[] args) {
 
