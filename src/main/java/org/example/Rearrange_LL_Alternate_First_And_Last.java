@@ -17,6 +17,24 @@ public class Rearrange_LL_Alternate_First_And_Last {
     // Method for merging the list
     public static Node mergeList(Node node){
 
+        // check if the list is empty or has only one node
+        if(node == null || node.next == null){
+            return node;
+        }
+        Node slow = node;
+        Node fast = node.next;
+
+        while(fast != null && fast.next != null){
+          slow = slow.next;
+          fast = fast.next.next;
+        }
+
+        // split the node into two node
+        Node firstHalf = node;
+        Node secondHalf = slow.next;
+        slow.next = null;
+
+
     }
     public static void main(String[] args) {
 
