@@ -12,6 +12,11 @@ class Node2 {
     }
 }
 public class Sort_Biotonic_DLL {
+
+    // function to sort doubly linked list
+    public static Node2 sortBiotonicDLL(Node2 head){
+
+    }
     public static void main(String[] args) {
 
     }
