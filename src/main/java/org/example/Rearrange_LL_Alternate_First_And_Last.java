@@ -3,6 +3,16 @@ package org.example;
 public class Rearrange_LL_Alternate_First_And_Last {
 
     public static Node reverseList(Node node){
+        Node prev = null;
+        Node curr = node , next;
+
+        while(curr != null){
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
 
     }
     public static void main(String[] args) {
