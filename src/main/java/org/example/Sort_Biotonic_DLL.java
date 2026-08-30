@@ -73,6 +73,13 @@ public class Sort_Biotonic_DLL {
         }
         return result;
     }
+    static void printList(Node head) {
+        while (head != null) {
+            System.out.print(head.data + " ");
+            head = head.next;
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
 
         // Create the doubly linked list: 2<->12<->11<->1
@@ -83,5 +90,8 @@ public class Sort_Biotonic_DLL {
         head.next.next.prev = head.next;
         head.next.next.next = new Node2(1);
         head.next.next.next.prev = head.next.next;
+
+        Node2 sortedHead = sortBiotonicDLL(head);
+
     }
 }
